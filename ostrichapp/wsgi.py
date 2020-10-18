@@ -11,8 +11,10 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+# Use production settings on Azure
 if os.environ.get('DJANGO_ENV') == 'production':
 	os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ostrichapp.production')
+# Use local debug settings on development
 else:
 	os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ostrichapp.settings')
 

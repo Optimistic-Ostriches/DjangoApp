@@ -1,7 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
-from .models import User, Task
 
+from .models import User, Task
+# Register User model to admin web console
 admin.site.register(User)
+# Register Task model to admin web console
 admin.site.register(Task)

@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+	# Main admin web console for db management
     path('admin/', admin.site.urls),
+    # API endpoint for the users application
     path('api/', include('users.urls')),
 ]
