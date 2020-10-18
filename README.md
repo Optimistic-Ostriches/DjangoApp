@@ -16,6 +16,8 @@ https://app.swaggerhub.com/apis/mliang1987/OstrichAPI/1.0.0
 
 The live server is availabe for endpoint testing through SwaggerHub.  (Note: Not all endpoints are currently implemented.
 
+A .yaml specification is also provided in the repository.
+
 ## Live Deployment
 
 The service is deployed as an Azure Web App, with the Django-admin endpoint here:
