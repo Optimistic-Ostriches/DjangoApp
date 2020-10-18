@@ -21,9 +21,6 @@ def tasks_view(request, pk):
 		relevant_user = User.objects.get(pk = pk)
 	except:
 		return HttpResponse("No user found.")	
-	
-	if request.content_type != 'application/json':
-		return HttpResponse("Wrong content type.")
 
 	if request.method == 'GET':
 		tasks = Task.objects.filter(user__pk=pk)
@@ -37,4 +34,3 @@ def tasks_view(request, pk):
 			difficulty = int(json_body['difficulty']))
 		q.save()
 		return JsonResponse(TaskSerializer(q).data)
-
