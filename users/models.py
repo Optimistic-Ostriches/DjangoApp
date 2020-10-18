@@ -15,3 +15,4 @@ class Task(models.Model):
 	subject = models.CharField(max_length = 200)
 	length = models.FloatField()
 	difficulty = models.IntegerField()
+	due_date = models.DateTimeField(null = True)

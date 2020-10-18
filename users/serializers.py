@@ -9,4 +9,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class TaskSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Task
-		fields = ['pk', 'subject', 'length', 'difficulty']
+		fields = ['pk', 'subject', 'length', 'difficulty', 'due_date']
